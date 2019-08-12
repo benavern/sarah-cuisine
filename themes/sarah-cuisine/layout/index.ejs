@@ -1,0 +1,17 @@
+<div class="hero-zone">
+
+</div>
+
+<section>
+  <div class="container">
+    <h2><%= page.title %></h2>
+
+    <ul>
+      <% page.posts.each(post => { %>
+        <li>
+          <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</section>
