@@ -1,12 +1,11 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+// shared
+@import './_shared/variables';
+@import './_shared/reset';
+@import './_shared/utils';
 
-html {
-  font-size: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+// pages
+@import './_pages/index';
 
-body {
-  margin: 0;
-}
+// partials
+@import './_partials/header';
+@import './_partials/footer';

@@ -1,0 +1,19 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: $black;
+  background-color: $white;
+}
+
+body {
+  margin: 0;
+  padding-top: 5rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Quicksand', sans-serif;
+}

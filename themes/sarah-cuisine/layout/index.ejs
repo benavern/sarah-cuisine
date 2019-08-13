@@ -1,17 +1,19 @@
-<div class="hero-zone">
-
-</div>
-
-<section>
-  <div class="container">
-    <h2><%= page.title %></h2>
-
-    <ul>
-      <% page.posts.each(post => { %>
-        <li>
-          <a href="<%= url_for(post.path) %>"><%= post.title %></a>
-        </li>
-      <% }) %>
-    </ul>
+<div id="home-page">
+  <div class="hero-zone">
+    <div class="container">
+      <h2 class="funny-font">Sarah Cuisine</h2>
+    </div>
   </div>
-</section>
+
+  <section>
+    <div class="container">
+      <ul>
+        <% page.posts.each(post => { %>
+          <li>
+            <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+  </section>
+</div>
