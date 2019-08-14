@@ -3,17 +3,19 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   color: $black;
   background-color: $white;
+  line-height: 1.6;
 }
 
 body {
   margin: 0;
-  padding-top: 5rem;
+  padding-top: $header-height;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Pangolin', cursive;
+  color: $primary;
 }

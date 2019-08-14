@@ -3,9 +3,10 @@
 @import './_shared/reset';
 @import './_shared/utils';
 
-// pages
-@import './_pages/index';
-
 // partials
 @import './_partials/header';
 @import './_partials/footer';
+
+// pages
+@import './_pages/index';
+@import './_pages/recette/header'

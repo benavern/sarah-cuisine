@@ -1,11 +1,8 @@
-.funny-font {
-  font-family: 'Pangolin', cursive;
-}
-
 .container {
   width: 100%;
   max-width: $site-width;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .center {
@@ -14,4 +11,8 @@
 
 .right {
   text-align: right;
+}
+
+.funny-font {
+  font-family: 'Pangolin', cursive;
 }

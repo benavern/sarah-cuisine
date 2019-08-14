@@ -1,0 +1,23 @@
+<%
+  var recettes = (page.posts || []).sort('date', -1)
+%>
+
+<ul>
+  <% page.posts.each(post => { %>
+    <li>
+      <%- link_to(post.path, post.title) %>
+    </li>
+  <% }) %>
+</ul>
+
+<% if (page.total > 1) { %>
+  <hr>
+  <div class="paginator">
+    <%-
+      paginator({
+        prev_text: '&lt; ',
+        next_text: ' &gt;'
+      })
+    %>
+  </div>
+<% } %>

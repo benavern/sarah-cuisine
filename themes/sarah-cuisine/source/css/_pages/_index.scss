@@ -1,8 +1,12 @@
 #home-page {
   .hero-zone {
     text-align: center;
-    color: $color2;
-    padding: 5rem 0 2rem;
+    color: $primary;
+    padding: 5rem 0;
+    background-size: cover;
+    // background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 
     h2 {
       font-size: 5rem;

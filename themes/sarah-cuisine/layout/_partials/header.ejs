@@ -1,12 +1,26 @@
 <header class="site-header">
   <div class="container">
-    <div class="logo">
-      <h1>Sarah Cuisine</h1>
+    <div class="logo funny-font">
+      <%- link_to('/', 'Sarah Cuisine') %>
     </div>
 
     <nav>
       <ul>
-        <li><a href="/">Accueil</a></li>
+        <li>
+          <%- link_to('/', 'Accueil', { class: is_home() ? 'active' : '' }) %>
+        </li>
+
+        <li>
+          <%- link_to('/recettes', 'Mes recettes', { class: is_post() || is_current('/recettes') ? 'active' : '' }) %>
+        </li>
+
+        <li>
+          <%- link_to('/a-propos', 'À propos', { class: is_current('/a-propos') ? 'active' : '' }) %>
+        </li>
+
+        <li>
+          <%- link_to('/contact', 'Contact', { class: is_current('/contact') ? 'active' : '' }) %>
+        </li>
       </ul>
     </nav>
   </div>

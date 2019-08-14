@@ -1,11 +1,9 @@
-<div class="post-header">
-  <div class="container">
-    <h2><%= page.title %></h2>
-  </div>
-</div>
+<div id="page-recette">
+  <%- partial('_pages/recette/header') %>
 
-<article class="post-content">
-  <div class="container">
-    <%- page.content%>
-  </div>
-</article>
+  <article class="recette-content">
+    <div class="container">
+      <%- page.content%>
+    </div>
+  </article>
+</div>
