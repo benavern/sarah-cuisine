@@ -1,0 +1,29 @@
+.paginator {
+  margin-top: 1rem;
+  text-align: center;
+
+  .page-number,
+  .extend,
+  .space {
+    padding: .3rem .75rem;
+    margin: 0 .1rem;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .page-number,
+  .extend {
+    border: 1px solid $light;
+    border-radius: .25em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $light;
+    }
+
+    &.current {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
