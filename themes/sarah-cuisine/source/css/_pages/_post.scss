@@ -1,5 +1,19 @@
 #page-recette {
-  .recette-content {
-    padding: 1rem;
+  .recette {
+    display: flex;
+
+    .recette-content {
+      flex: 1;
+    }
+
+    .recette-details {
+      order: 1;
+      width: 300px;
+
+      .recette-details-content {
+        position: sticky;
+        top: calc(#{$header-height} + 1rem);
+      }
+    }
   }
 }

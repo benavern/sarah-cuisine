@@ -1,0 +1,35 @@
+<div class="recette-details-content">
+
+  <!-- caterories & tags ? -->
+  <!-- @todo -->
+
+  <!-- difficulty -->
+  <% if (page.difficulty && typeof page.difficulty === 'number') {
+    var difficulty = Math.min(5, Math.round(Math.abs(page.difficulty)))
+    var rest = 5 - difficulty %>
+    <div class="difficulty details-item">
+      <h3>Difficulté :</h3>
+
+      <p>
+        <% for (var i = 0; i < difficulty; i++) { %> &#9733; <% } %>
+        <% for (var i = 0; i < rest; i++) { %> &#9734; <% } %>
+      </p>
+    </div>
+  <% } %>
+
+  <!-- ingredients -->
+  <% if (page.ingredients && page.ingredients.length) { %>
+    <div class="ingredients details-item">
+      <h3>Ingrédients :</h3>
+
+      <% page.ingredients.forEach(function (ingredient, i) { %>
+        <div class="ingredients-item">
+          <label for="ingredient-<%= i %>">
+            <input type="checkbox" name="ingredient" id="ingredient-<%= i %>">
+            <%= ingredient %>
+          </label>
+        </div>
+      <% }) %>
+    </div>
+  <% } %>
+</div>
