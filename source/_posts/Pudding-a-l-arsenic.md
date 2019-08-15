@@ -7,7 +7,7 @@ categories:
 tags:
   - diet
   - poison
-difficulty: 3
+difficulty: 5
 ingredients:
   - 1 vache
   - 1 patate
