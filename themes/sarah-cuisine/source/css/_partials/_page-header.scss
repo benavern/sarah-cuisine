@@ -1,8 +1,9 @@
-.recette-header {
-  padding: 5rem 0 2rem;
+.page-header {
+  padding: 10rem 0 3rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: $dark;
 
   h1 {
     color: $white;

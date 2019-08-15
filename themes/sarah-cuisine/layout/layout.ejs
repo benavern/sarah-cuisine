@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Sarah Cuisine</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Pangolin" rel="stylesheet">
-    <%- css('css/style.css')%>
+    <%- partial('_partials/head.ejs') %>
   </head>
 
   <body>
-    <%- partial('_partials/header.ejs')%>
+    <%- partial('_partials/site-header.ejs')%>
 
     <main>
       <%- body %>
     </main>
 
-    <%- partial('_partials/footer.ejs') %>
+    <%- partial('_partials/site-footer.ejs', {}, { cache: true }) %>
 
     <%- js('js/main.js')%>
   </body>

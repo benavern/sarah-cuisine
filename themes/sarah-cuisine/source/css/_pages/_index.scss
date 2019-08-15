@@ -1,16 +1,16 @@
-#home-page {
+#page-home {
   .hero-zone {
     text-align: center;
-    color: $primary;
-    padding: 5rem 0;
+    padding: 6rem 0;
     background-size: cover;
-    // background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 
     h2 {
+      color: $white;
+      text-shadow: 0 0 .5em $black;
       font-size: 5rem;
-      letter-spacing: .05em;
+      letter-spacing: .1em;
     }
   }
 }

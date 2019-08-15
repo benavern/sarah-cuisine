@@ -1,21 +1,51 @@
 *, *::before, *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
+  // font-size: 100%;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $text-font;
   color: $black;
   background-color: $white;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 body {
-  margin: 0;
   padding-top: $header-height;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Pangolin', cursive;
+  font-family: $title-font;
   color: $primary;
+  margin: .5em 0;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+
+h1, h2, h3, h4, h5, p, ul, ol, blockquote {
+  margin: .5em 0;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+hr {
+  margin: 1rem 3rem;
+  border: none;
+  border-top: 2px solid $light;
 }

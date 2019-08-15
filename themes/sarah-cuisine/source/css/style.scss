@@ -4,9 +4,11 @@
 @import './_shared/utils';
 
 // partials
-@import './_partials/header';
-@import './_partials/footer';
+@import './_partials/site-header';
+@import './_partials/site-footer';
+@import './_partials/page-header';
 
 // pages
 @import './_pages/index';
-@import './_pages/recette/header'
+@import './_pages/archive';
+@import './_pages/post';

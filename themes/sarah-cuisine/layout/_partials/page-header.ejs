@@ -1,0 +1,10 @@
+<%
+var title = (title || page.title || config.title)
+var image = (image || page.featured_img || theme.header_bg)
+%>
+
+<div class="page-header" style="background-image: url(<%= image %>);">
+  <div class="container">
+    <h1><%= title %></h1>
+  </div>
+</div>
