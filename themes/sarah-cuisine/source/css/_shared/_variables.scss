@@ -10,6 +10,18 @@ $white: #fff;
 $site-width: 1024px;
 $header-height: 4rem;
 
+// Breakpoints
+$x-large: 1440px;
+$large: 1224px;
+$medium: $site-width;
+$small: 768px;
+$x-small: 480px;
+
+$breakpoints: 'xs' $x-small, 's' $small, 'm' $medium, 'l' $large, 'xl' $x-large;
+
+$nb-col: 6;
+$gutter: .5rem;
+
 // font
 $text-font: 'Josefin Slab', serif;
 $title-font: 'Amatic SC', sans-serif;

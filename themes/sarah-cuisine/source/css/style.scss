@@ -2,6 +2,7 @@
 @import './_shared/variables';
 @import './_shared/reset';
 @import './_shared/utils';
+@import './_shared/grid';
 
 // partials
 @import './_partials/site-header';
@@ -15,3 +16,4 @@
 
 // components
 @import './_components/recette-details';
+@import './_components/card';

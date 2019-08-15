@@ -1,0 +1,40 @@
+<%
+  var recettes = (recettes || page.posts || []).sort('date', -1)
+  var limit
+  if (limit && recettes.length > limit) {
+    recettes = recettes.slice(0, limit)
+  }
+%>
+
+<div class="grid">
+  <% recettes.each(function (recette) { %>
+    <div class="grid-item s-2 m-3">
+      <div class="box">
+        <%- partial('card/card', { items: [
+            {
+              type: 'image-link',
+              link: url_for(recette.path),
+              image: recette.thumbnail || recette.featured_img || theme.header_bg,
+              title: recette.title,
+              subtitle: `le ${date(recette.date, 'DD/MM/YYYY')}` + (recette.author ? ` par ${recette.author}` : '')
+            },
+            { type: 'html', html: partial('./stars', { stars: recette.difficulty }) },
+            { type: 'text', text: truncate(recette.excerpt || strip_html(recette.content), {length: 150})},
+            { type: 'button',  link: url_for(recette.path), text: 'Voir la recette', class: 'btn-link'}
+          ]}) %>
+      </div>
+    </div>
+  <% }) %>
+</div>
+
+<% if (page.total > 1) { %>
+  <hr>
+  <div class="paginator">
+    <%-
+      paginator({
+        prev_text: '&lt; ',
+        next_text: ' &gt;'
+      })
+    %>
+  </div>
+<% } %>

@@ -1,0 +1,5 @@
+<% if (item.link) { %>
+  <a class="card-item card-button <%= item.class || '' %>" href="<%= item.link %>">
+    <%- partial('./content', { item }) %>
+  </a>
+<% } %>

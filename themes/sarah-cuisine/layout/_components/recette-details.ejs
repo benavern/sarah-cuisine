@@ -4,16 +4,10 @@
   <!-- @todo -->
 
   <!-- difficulty -->
-  <% if (page.difficulty && typeof page.difficulty === 'number') {
-    var difficulty = Math.min(5, Math.round(Math.abs(page.difficulty)))
-    var rest = 5 - difficulty %>
+  <% if (page.difficulty && typeof page.difficulty === 'number') { %>
     <div class="difficulty details-item">
       <h3>Difficulté :</h3>
-
-      <p>
-        <% for (var i = 0; i < difficulty; i++) { %> &#9733; <% } %>
-        <% for (var i = 0; i < rest; i++) { %> &#9734; <% } %>
-      </p>
+      <%- partial('./stars', { stars: page.difficulty }) %>
     </div>
   <% } %>
 

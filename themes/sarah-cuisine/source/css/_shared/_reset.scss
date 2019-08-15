@@ -49,3 +49,11 @@ hr {
   border: none;
   border-top: 2px solid $light;
 }
+
+pre {
+  background-color: $black;
+  color: $light;
+  width: 100%;
+  overflow-x: auto;
+  font-size: .7rem;
+}

@@ -1,0 +1,5 @@
+<% if (item.link) { %>
+  <a href="<%= item.link %>" title="<%= item.title %>" class="card-image-link">
+    <%- partial(`./image`, { item }) %>
+  </a>
+<% } %>

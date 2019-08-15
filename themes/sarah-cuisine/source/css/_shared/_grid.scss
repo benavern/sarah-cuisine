@@ -1,0 +1,46 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -#{$gutter / 2};
+  align-items: stretch;
+
+  > .grid-item {
+    width: 100%;
+    display: block;
+
+    @each $breakpoint in $breakpoints {
+
+      // .grid-item.m-2.xl-4...
+      @media (min-width: nth($breakpoint, 2)) {
+
+        @for $i from 1 through $nb-col {
+          &.#{nth($breakpoint, 1)}-#{$i} {
+            width: #{100% / $i};
+          }
+        }
+
+        &.#{nth($breakpoint, 1)}-first {
+          order: -1;
+        }
+      }
+
+      // .grid-item.m-2-3.xl-3-4...
+      @media (min-width: nth($breakpoint, 2)) {
+        @for $i from 1 through $nb-col {
+          @for $j from 1 through $i {
+            &.#{nth($breakpoint, 1)}-#{$j}-#{$i} {
+              width: #{$j * 100% / $i};
+            }
+          }
+        }
+      }
+    }
+
+    > .box {
+      margin: #{$gutter / 2};
+      padding: $gutter;
+      display: block;
+    }
+  }
+}
+

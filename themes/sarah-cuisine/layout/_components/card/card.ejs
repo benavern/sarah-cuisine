@@ -1,0 +1,14 @@
+<%
+var types = ['text', 'button', 'image', 'image-link', 'html']
+
+function getType (item) {
+  if (item.type && types.includes(item.type)) return item.type
+  return 'text'
+}
+%>
+
+<div class="card">
+  <% items.forEach(item => { %>
+    <%- partial(`./item/${getType(item)}`, { item }) %>
+  <% }) %>
+</div>

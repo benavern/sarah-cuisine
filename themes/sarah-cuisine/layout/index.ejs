@@ -8,16 +8,13 @@
   <section class="page-content">
     <div class="container">
       <h3>
-        Mes recettes :
+        Mes dernières recettes :
       </h3>
 
-      <ul>
-        <% page.posts.each(post => { %>
-          <li>
-            <%- link_to(post.path, post.title) %>
-          </li>
-        <% }) %>
-      </ul>
+      <%- partial('_components/recettes-list', {
+        recettes: site.posts,
+        limit: 3
+      }) %>
     </div>
   </section>
 </div>

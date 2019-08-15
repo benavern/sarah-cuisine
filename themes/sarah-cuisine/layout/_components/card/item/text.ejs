@@ -1,0 +1,6 @@
+<% if (item.text) { %>
+  <div class="card-item card-text <%= item.class || '' %>">
+    <%- partial('./content', { item }) %>
+  </div>
+<% } %>
+

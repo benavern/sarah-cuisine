@@ -1,0 +1,7 @@
+<% if (item.image) { %>
+  <div class="card-item card-image <%= item.class || '' %>" style="<%= item.image ? 'background-image: url('+item.image+')' : ''  %>">
+    <div class="card-image-content">
+      <%- partial('./content', { item }) %>
+    </div>
+  </div>
+<% } %>

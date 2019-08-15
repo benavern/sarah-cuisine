@@ -1,0 +1,15 @@
+<% if(item.title) { %>
+  <h3><%= trim(item.title) %></h3>
+<% } %>
+
+<% if(item.subtitle) { %>
+  <h5><%= trim(item.subtitle) %></h5>
+<% } %>
+
+<% if(item.text) { %>
+  <%= trim(item.text) %>
+<% } %>
+
+<% if(item.html) { %>
+  <%- item.html %>
+<% } %>
