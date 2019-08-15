@@ -3,6 +3,10 @@
   max-width: $site-width;
   margin: 0 auto;
   padding: 0 1rem;
+
+  @media (max-width: $small) {
+    padding: 0 .5rem;
+  }
 }
 
 .center {

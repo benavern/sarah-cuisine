@@ -24,6 +24,10 @@
       text-shadow: 0 0 .2em $black;
       font-size: 5rem;
       letter-spacing: .1em;
+
+      @media (max-width: $small) {
+        font-size: 3rem;
+      }
     }
   }
 }
