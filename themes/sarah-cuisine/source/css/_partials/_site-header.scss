@@ -73,22 +73,15 @@
         background-color: rgba($black, .5);
 
         ul {
-          position: absolute;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          width: 350px;
-          max-width: 95%;
+          flex-direction: column;
+          display: block;
+          width: 100%;
           background-color: rgba($white, .9);
+          text-align: center;
         }
 
         &.visible {
           display: block;
-        }
-
-        ul {
-          flex-direction: column;
-          text-align: right;
         }
       }
     }
