@@ -1,0 +1,11 @@
+.stars {
+  font-size: 1.5em;
+  color: $primary;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+
+  .star {
+    padding: 0 .5rem;
+  }
+}

@@ -1,14 +1,27 @@
 #page-home {
   .hero-zone {
+    position: relative;
     text-align: center;
     padding: 6rem 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
+    &::before {
+      content: '';
+      background-color: rgba($black, .2);
+      box-shadow: 0 0 5rem rgba($black,0.5) inset;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
     h2 {
+      position: relative;
       color: $white;
-      text-shadow: 0 0 .5em $black;
+      text-shadow: 0 0 .2em $black;
       font-size: 5rem;
       letter-spacing: .1em;
     }

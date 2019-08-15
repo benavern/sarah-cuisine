@@ -3,12 +3,12 @@ var stars = Math.min(5, Math.round(Math.abs(stars)))
 var rest = 5 - stars %>
 %>
 
-<div class="stars">
+<div class="stars" title="Difficulté de <%= stars %>/5">
   <% for (var i = 0; i < stars; i++) { %>
-    <span clas="star">&#9733;</span>
+    <span class="star">&#9733;</span>
   <% } %>
 
   <% for (var i = 0; i < rest; i++) { %>
-    <span clas="star">&#9734;</span>
+    <span class="star">&#9734;</span>
   <% } %>
 </div>

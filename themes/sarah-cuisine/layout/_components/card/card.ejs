@@ -8,7 +8,7 @@ function getType (item) {
 %>
 
 <div class="card">
-  <% items.forEach(item => { %>
+  <% items.filter(item => !item.hide).forEach(item => { %>
     <%- partial(`./item/${getType(item)}`, { item }) %>
   <% }) %>
 </div>

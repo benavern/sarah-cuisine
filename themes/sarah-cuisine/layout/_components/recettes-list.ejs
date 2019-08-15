@@ -18,9 +18,20 @@
               title: recette.title,
               subtitle: `le ${date(recette.date, 'DD/MM/YYYY')}` + (recette.author ? ` par ${recette.author}` : '')
             },
-            { type: 'html', html: partial('./stars', { stars: recette.difficulty }) },
-            { type: 'text', text: truncate(recette.excerpt || strip_html(recette.content), {length: 150})},
-            { type: 'button',  link: url_for(recette.path), text: 'Voir la recette', class: 'btn-link'}
+            {
+              type: 'html',
+              html: '<h5>Difficulté :</h5>' + partial('./stars', { stars: recette.difficulty }),
+              hide: !recette.difficulty
+            },
+            {
+              type: 'text',
+              text: truncate(recette.excerpt || strip_html(recette.content), {length: 150})
+            },
+            {
+              type: 'button',
+              link: url_for(recette.path),
+              text: 'Voir la recette'
+            }
           ]}) %>
       </div>
     </div>
