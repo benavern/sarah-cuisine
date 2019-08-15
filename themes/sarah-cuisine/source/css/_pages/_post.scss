@@ -42,4 +42,21 @@
       }
     }
   }
+
+  @media (max-width: $medium) {
+    .recette {
+      flex-direction: column;
+
+      .recette-details {
+        order: 0;
+        width: 100%;
+        padding: 1rem;
+
+        .recette-details-content {
+          position: relative;
+          top: 0;
+        }
+      }
+    }
+  }
 }
