@@ -20,12 +20,15 @@
             },
             {
               type: 'html',
-              html: '<h5>Difficulté :</h5>' + partial('./stars', { stars: recette.difficulty }),
-              hide: !recette.difficulty
+              html: `
+                <h4>${list_categories(recette.categories, { show_count: false, style: 'category', separator: ', ', transform: titlecase })}</h4>
+                <h6>${list_tags(recette.tags, { show_count: false, style: 'tag', separator: ', ', transform: titlecase })}</h6>
+              `
             },
             {
-              type: 'text',
-              text: truncate(recette.excerpt || strip_html(recette.content), {length: 150})
+              type: 'html',
+              html: '<h5>Difficulté :</h5>' + partial('./stars', { stars: recette.difficulty }),
+              hide: !recette.difficulty
             },
             {
               type: 'button',
