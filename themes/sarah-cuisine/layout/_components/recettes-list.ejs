@@ -23,6 +23,11 @@
               html: `
                 <h4>${list_categories(recette.categories, { show_count: false, style: 'category', separator: ', ', transform: titlecase })}</h4>
                 <p>${list_tags(recette.tags, { show_count: false, style: 'tag', separator: '', class: 'badge' })}</p>
+                <div class="right">
+                  <small class="disqus-comment-count" data-disqus-identifier="${recette.path}">
+                    ? Commentaires
+                  </small>
+                </div>
               `
             },
             {
@@ -38,14 +43,6 @@
                 ${ partial('./stars', { stars: recette.difficulty })}
               `,
               hide: !recette.difficulty
-            },
-            {
-              type: 'html',
-              html: `
-                <p class="disqus-comment-count" data-disqus-identifier="${recette.path}">
-                  Commentaires
-                </p>
-              `
             },
             {
               type: 'button',
