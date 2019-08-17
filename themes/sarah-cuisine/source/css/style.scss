@@ -1,8 +1,9 @@
 // shared
 @import './_shared/variables';
 @import './_shared/reset';
-@import './_shared/utils';
 @import './_shared/grid';
+@import './_shared/layout';
+@import './_shared/utils';
 
 // partials
 @import './_partials/site-header';
@@ -11,7 +12,6 @@
 
 // pages
 @import './_pages/index';
-@import './_pages/post';
 
 // components
 @import './_components/card';

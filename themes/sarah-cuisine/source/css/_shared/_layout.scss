@@ -1,0 +1,42 @@
+.page-content {
+  padding: 1rem 0;
+
+  .content-wrapper {
+    display: flex;
+
+    > main {
+      flex: 1;
+    }
+
+    > aside {
+      width: 15rem;
+      padding: 1rem 0 .5rem 1rem;
+
+      .aside-content {
+        position: sticky;
+        top: calc(#{$header-height + 2rem})
+      }
+    }
+  }
+
+  @media (max-width: $medium) {
+    .content-wrapper {
+      flex-direction: column;
+
+      > aside {
+        order: 0;
+        width: 100%;
+        padding: 1rem 0;
+
+        .aside-content {
+          position: relative;
+          top: 0;
+        }
+
+        &.recette-details {
+          order: -1
+        }
+      }
+    }
+  }
+}

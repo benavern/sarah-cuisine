@@ -2,10 +2,20 @@
   <%- partial('_partials/page-header', { title: 'Mes recettes' }) %>
 
   <div class="page-content">
-    <div class="container">
-      <h3>Toutes mes recettes</h3>
+    <div class="content-wrapper container">
+      <main>
+        <section>
+          <h3>Toutes mes recettes</h3>
 
-      <%- partial('_components/recettes-list.ejs') %>
+          <%- partial('_components/recettes-list.ejs') %>
+        </section>
+      </main>
+
+      <aside>
+        <div class="aside-content">
+          <%- partial('_components/aside/default', {}, { cache: true }) %>
+        </div>
+      </aside>
     </div>
   </div>
 </div>

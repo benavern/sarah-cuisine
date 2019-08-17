@@ -1,15 +1,19 @@
 <div id="page-recette">
   <%- partial('_partials/page-header') %>
 
-<div class="page-content">
-    <div class="recette container">
-      <aside class="recette-details">
-        <%- partial('_components/recette-details')%>
-      </aside>
+  <div class="page-content">
+    <div class="content-wrapper container">
+      <main>
+        <section class="recette-content">
+          <%- page.content %>
+        </section>
+      </main>
 
-      <article class="recette-content">
-        <%- page.content%>
-      </article>
+      <aside class="recette-details">
+        <div class="aside-content">
+          <%- partial('_components/aside/recette') %>
+        </div>
+      </aside>
     </div>
   </div>
 </div>

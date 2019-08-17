@@ -29,7 +29,7 @@ h3 { font-size: 2rem; }
 h4 { font-size: 1.5rem; }
 
 h1, h2, h3, h4, h5, p, ul, ol, blockquote {
-  margin: .5em 0;
+  margin: .75em 0 .5em;
 }
 
 ul, ol {
@@ -44,6 +44,10 @@ a {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 hr {
   margin: 1rem 3rem;
   border: none;
@@ -56,4 +60,23 @@ pre {
   width: 100%;
   overflow-x: auto;
   font-size: .7rem;
+}
+
+blockquote {
+  position: relative;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  background-color: $light;
+  font-style: italic;
+  border-left: .5rem solid $dark;
+  border-radius: .25rem;
+
+  &::before {
+    content: '"';
+    font-size: 8rem;
+    color: $dark;
+    position: absolute;
+    top: -3rem;
+    right: 1rem
+  }
 }

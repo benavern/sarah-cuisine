@@ -22,6 +22,21 @@
   font-weight: normal;
 }
 
-.page-content {
-  padding: 1rem 0;
+.badge-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: .25em .75em;
+  margin: 0 .25em;
+  border-radius: 1.5em;
+  background-color: $primary;
+  color: $white;
+  font-weight: bold;
+  font-size: .9em;
+  font-variant: small-caps;
+  letter-spacing: .05em;
+
+  &:hover {
+    background-color: darken($primary, 5%);
+    color: $white;
+  }
 }

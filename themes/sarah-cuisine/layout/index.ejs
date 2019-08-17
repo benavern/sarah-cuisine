@@ -5,16 +5,24 @@
     </div>
   </div>
 
-  <section class="page-content">
-    <div class="container">
-      <h3>
-        Mes dernières recettes :
-      </h3>
+  <div class="page-content">
+    <div class="content-wrapper container">
+      <main>
+        <section>
+          <h3>Mes dernières recettes :</h3>
 
-      <%- partial('_components/recettes-list', {
-        recettes: site.posts,
-        limit: 3
-      }) %>
+          <%- partial('_components/recettes-list', {
+            recettes: site.posts,
+            limit: 4
+          }) %>
+        </section>
+      </main>
+
+      <aside>
+        <div class="aside-content">
+          <%- partial('_components/aside/default', {}, { cache: true }) %>
+        </div>
+      </aside>
     </div>
-  </section>
+  </div>
 </div>

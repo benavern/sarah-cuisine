@@ -8,7 +8,7 @@
 
 <div class="grid">
   <% recettes.each(function (recette) { %>
-    <div class="grid-item xs-2 m-3">
+    <div class="grid-item s-2">
       <div class="box">
         <%- partial('card/card', { items: [
             {
@@ -22,8 +22,14 @@
               type: 'html',
               html: `
                 <h4>${list_categories(recette.categories, { show_count: false, style: 'category', separator: ', ', transform: titlecase })}</h4>
-                <h6>${list_tags(recette.tags, { show_count: false, style: 'tag', separator: ', ', transform: titlecase })}</h6>
+                <p>${list_tags(recette.tags, { show_count: false, style: 'tag', separator: '', class: 'badge' })}</p>
               `
+            },
+            {
+              type: 'text',
+              subtitle: `Pour ${recette.nb_persons} personnes.`,
+              class: 'center',
+              hide: !recette.nb_persons
             },
             {
               type: 'html',

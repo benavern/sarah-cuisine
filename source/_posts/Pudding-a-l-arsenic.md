@@ -1,11 +1,8 @@
 ---
 title: Pudding à l'arsenic
-categories:
-  - entrée
-  - plat
-  - dessert
+categories: dessert
 tags:
-  - diet
+  - gourmand
   - poison
 difficulty: 5
 ingredients:

@@ -1,11 +1,13 @@
-<div id="page-default">
-  <%- partial('_partials/page-header') %>
+<div id="page-recettes-list">
+  <%- partial('_partials/page-header', { title: page.category }) %>
 
   <div class="page-content">
     <div class="content-wrapper container">
       <main>
         <section>
-          <%- page.content %>
+          <h3>Mes recettes dans la catégorie "<%= page.category %>" :</h3>
+
+          <%- partial('_components/recettes-list.ejs') %>
         </section>
       </main>
 

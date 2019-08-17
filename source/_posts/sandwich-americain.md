@@ -1,8 +1,7 @@
 ---
 title: Sandwich américain
 featured_img: https://images.unsplash.com/photo-1550507992-eb63ffee0847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
-categories:
-  - plat
+categories: plat
 tags:
   - sandwitch
   - snack

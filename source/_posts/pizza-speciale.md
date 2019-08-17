@@ -1,16 +1,13 @@
 ---
-title: Pizza
-categories:
-  - entrée
-  - plat
-  - dessert
+title: Pizza spéciale
+categories: plat
 tags:
-  - diet
-  - gras
+  - gourmand
 difficulty: 3
 ingredients:
   - 1 vache
   - 1 patate
+nb_persons: 4
 date: 2019-08-16 00:08:02
 featured_img: https://i.imgur.com/zH36flU.jpg
 thumbnail: https://i.imgur.com/zH36flU.jpg
