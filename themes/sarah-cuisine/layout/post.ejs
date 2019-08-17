@@ -4,8 +4,12 @@
   <div class="page-content">
     <div class="content-wrapper container">
       <main>
-        <section class="recette-content">
+        <article class="recette-content">
           <%- page.content %>
+        </article>
+
+        <section class="comments">
+          <%- partial('_components/comments') %>
         </section>
       </main>
 

@@ -33,8 +33,19 @@
             },
             {
               type: 'html',
-              html: '<h5>Difficulté :</h5>' + partial('./stars', { stars: recette.difficulty }),
+              html: `
+                <h5>Difficulté :</h5>
+                ${ partial('./stars', { stars: recette.difficulty })}
+              `,
               hide: !recette.difficulty
+            },
+            {
+              type: 'html',
+              html: `
+                <p class="disqus-comment-count" data-disqus-identifier="${recette.path}">
+                  Commentaires
+                </p>
+              `
             },
             {
               type: 'button',
