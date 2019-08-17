@@ -7,19 +7,19 @@ $light: #ddd;
 $white: #fff;
 
 // layout
-$site-width: 1024px;
+$site-width: 1200px;
 $header-height: 4rem;
+$sidebar-width: 18rem;
 
 // Breakpoints
-$x-large: 1440px;
-$large: 1224px;
-$medium: $site-width;
-$small: 768px;
-$x-small: 480px;
+$large: $site-width;
+$medium: 900px;
+$small: 600px;
+$x-small: 320px;
 
-$breakpoints: 'xs' $x-small, 's' $small, 'm' $medium, 'l' $large, 'xl' $x-large;
+$breakpoints: 'xs' $x-small, 's' $small, 'm' $medium, 'l' $large;
 
-$nb-col: 6;
+$nb-col: 2;
 $gutter: .5rem;
 
 // font
