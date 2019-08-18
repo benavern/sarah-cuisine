@@ -67,7 +67,6 @@ collections:
           label: "Ingrédient"
           name: "ingredient"
           widget: "string"
-          default: "chocolat"
 
       - label: "Image principale"
         name: "featured_img"
@@ -80,3 +79,46 @@ collections:
       - label: "Recette"
         name: "body"
         widget: "markdown"
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "À propos"
+        name: "about"
+        file: "source/a-propos/index.md"
+        fields:
+          - label: Title
+            name: title
+            widget: string
+
+          - label: "Image principale"
+            name: "featured_img"
+            widget: "image"
+
+          - label: "Image pour les réseaux sociaux"
+            name: "thumbnail"
+            widget: "image"
+
+          - label: "Contenu"
+            name: "body"
+            widget: "markdown"
+
+      - label: "Contact"
+        name: "contact"
+        file: "source/contact/index.md"
+        fields:
+          - label: Title
+            name: title
+            widget: string
+
+          - label: "Image principale"
+            name: "featured_img"
+            widget: "image"
+
+          - label: "Image pour les réseaux sociaux"
+            name: "thumbnail"
+            widget: "image"
+
+          - label: "Contenu"
+            name: "body"
+            widget: "markdown"
