@@ -13,7 +13,7 @@
 
           <%- partial('_components/recettes-list', {
             recettes: site.posts,
-            limit: 4
+            limit: site.data.settings.max_items_home
           }) %>
         </section>
       </main>

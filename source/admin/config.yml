@@ -128,6 +128,8 @@ collections:
 
   - name: "data"
     label: "Données"
+    editor:
+      preview: false
     files:
       - label: "Réglages"
         name: "settings"
@@ -135,5 +137,51 @@ collections:
         fields:
           - label: Menu
             name: menu
-            widget: 'object'
+            widget: list
+            allow_add: false
+            fields:
+              - name: name
+                label: 'Nom de la page'
+                widget: string
 
+              - name: path
+                label: 'Chemin vers la page'
+                widget: string
+
+              - name: active_condition
+                label: "Condition d'activation"
+                widget: 'select'
+                required: false
+                options:
+                  - name: home
+                    label: Accueil
+                  - name: post
+                    label: recette
+
+          - name: description
+            label: Description
+            widget: object
+            fields:
+              - name: title
+                label: Titre
+                widget: string
+
+              - name: subtitle
+                label: Sous titre
+                widget: string
+
+              - name: avatar
+                label: Avatar
+                widget: image
+
+              - name: text
+                label: Texte
+                widget: text
+
+          - name: footer
+            label: Text de la partie basse
+            widget: markdown
+
+          - name: max_items_home
+            label: "Nombre de recettes sur la page d'accueil"
+            widget: number
