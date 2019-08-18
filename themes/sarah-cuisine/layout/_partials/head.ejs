@@ -11,13 +11,25 @@ if (is_home()) {
 }
 %>
 
-<title><%= pageTitle ? titlecase(pageTitle) + " | " + titlecase(config.title) : titlecase(config.title) %></title>
+<title>
+  <%= pageTitle
+    ? titlecase(pageTitle) + " | " + titlecase(config.title)
+    : titlecase(config.title)
+  %>
+</title>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
+
 <%- css('css/style.css') %>
+
 <%- open_graph({
   title: page.title,
   image: page.thumbnail || page.featured_img || url_for('images/avatar.png'),
   site_name: config.title
 }) %>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

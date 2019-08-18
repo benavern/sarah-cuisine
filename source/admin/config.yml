@@ -1,0 +1,78 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+# This line should *not* be indented
+media_folder: "source/images/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Recettes" # Used in the UI
+    folder: "source/_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document, usually in front matter
+      - label: "Titre"
+        name: "title"
+        widget: "string"
+
+      - label: "Auteur"
+        name: "author"
+        widget: "string"
+        default: 'Sarah'
+
+      - label: "Date de publication"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Categorie"
+        name: "categories"
+        widget: "select"
+        options:
+          - "Entrée"
+          - "Plat"
+          - "Déssert"
+        default: "Plat"
+
+      - label: "Étiquettes"
+        name: "tags"
+        widget: "list"
+        field:
+          label: "Étiquette"
+          name: "tag"
+          widget: "string"
+
+      - label: "Difficulté"
+        name: "difficulty"
+        widget: "number"
+        default: 3
+
+      - label: "Nombre de personnes"
+        name: "nb_persons"
+        widget: "number"
+        default: 4
+
+      - label: "Ingrédients"
+        name: "ingredients"
+        widget: "list"
+        field:
+          label: "Ingrédient"
+          name: "ingredient"
+          widget: "string"
+          default: "chocolat"
+
+      - label: "Image principale"
+        name: "featured_image"
+        widget: "image"
+
+      - label: "Image pour les réseaux sociaux"
+        name: "thumbnail"
+        widget: "image"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
