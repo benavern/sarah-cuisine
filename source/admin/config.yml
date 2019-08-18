@@ -125,3 +125,15 @@ collections:
           - label: "Contenu"
             name: "body"
             widget: "markdown"
+
+  - name: "data"
+    label: "Données"
+    files:
+      - label: "Réglages"
+        name: "settings"
+        file: "source/_data/settings.yml"
+        fields:
+          - label: Menu
+            name: menu
+            widget: 'object'
+

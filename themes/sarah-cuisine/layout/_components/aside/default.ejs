@@ -3,17 +3,17 @@
     items: [
       {
         type: 'text',
-        title: 'Bienvenue!',
-        text: 'Moi c\'est Sarah.'
+        title: site.data.settings.description.title,
+        subtitle: site.data.settings.description.subtitle
       },
       {
         type: 'image',
-        image: '/images/sarah.jpg',
+        image: site.data.settings.description.avatar,
         class: 'avatar'
       },
       {
         type: 'text',
-        text: 'J\'aime cuisiner des recettes saines et gourmandes. Je les partage ici pour que vous puissiez vous régaler seul(e) ou en famille!'
+        text: site.data.settings.description.text
       }
     ]
   })
