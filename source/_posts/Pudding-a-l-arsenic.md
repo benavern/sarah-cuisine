@@ -7,7 +7,7 @@ tags:
   - gourmand
   - poison
 difficulty: 5
-nb_persons: 1
+nb_persons: 2
 ingredients:
   - 1 vache
   - 1 patate
