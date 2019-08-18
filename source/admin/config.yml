@@ -28,6 +28,7 @@ collections:
       - label: "Date de publication"
         name: "date"
         widget: "datetime"
+        default: ""
 
       - label: "Categorie"
         name: "categories"
@@ -50,11 +51,14 @@ collections:
         name: "difficulty"
         widget: "number"
         default: 3
+        min: 0
+        max: 5
 
       - label: "Nombre de personnes"
         name: "nb_persons"
         widget: "number"
         default: 4
+        min: 0
 
       - label: "Ingrédients"
         name: "ingredients"
@@ -66,7 +70,7 @@ collections:
           default: "chocolat"
 
       - label: "Image principale"
-        name: "featured_image"
+        name: "featured_img"
         widget: "image"
 
       - label: "Image pour les réseaux sociaux"
