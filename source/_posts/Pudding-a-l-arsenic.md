@@ -1,16 +1,20 @@
 ---
 title: Pudding à l'arsenic
-categories: dessert
+author: Sarah
+date: 2019-08-16T00:15:11.000Z
+categories: Déssert
 tags:
   - gourmand
   - poison
+  - asterix
 difficulty: 5
+nb_persons: 3
 ingredients:
-  - 1 vache
-  - 1 patate
-featured_img: https://i.imgur.com/nINqw1Q.gif
-thumbnail: https://i.imgur.com/nINqw1Q.gif
-date: 2019-08-16 00:15:11
+  - chocolat
+  - truc
+  - machin
+featured_img: /images/uploads/pudding_a_l-arsenic.gif
+thumbnail: 'https://i.imgur.com/nINqw1Q.gif'
 ---
 
 ## ♪ Le Pudding a L'arsenic ♪
