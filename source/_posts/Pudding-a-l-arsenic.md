@@ -11,7 +11,7 @@ nb_persons: 2
 ingredients:
   - 1 vache
   - 1 patate
-featured_image: /images/uploads/pudding_a_l-arsenic.gif
+featured_img: /images/uploads/pudding_a_l-arsenic.gif
 thumbnail: 'https://i.imgur.com/nINqw1Q.gif'
 ---
 
