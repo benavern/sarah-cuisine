@@ -9,6 +9,9 @@ publish_mode: editorial_workflow
 media_folder: "source/images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
+site_url: https://sarah-cuisine.netlify.com
+display_url: https://sarah-cuisine.netlify.com
+
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Recettes" # Used in the UI
