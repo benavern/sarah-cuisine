@@ -6,6 +6,7 @@ categories: Déssert
 tags:
   - gourmand
   - poison
+  - asterix
 difficulty: 5
 nb_persons: 2
 ingredients:
