@@ -1,16 +1,17 @@
 ---
 title: Pizza spéciale
-categories: plat
+author: Dough
+date: 2019-08-16T00:08:02.000Z
+categories: Plat
 tags:
   - gourmand
 difficulty: 3
+nb_persons: 1
 ingredients:
   - 1 vache
   - 1 patate
-nb_persons: 4
-date: 2019-08-16 00:08:02
-featured_img: https://i.imgur.com/zH36flU.jpg
-thumbnail: https://i.imgur.com/zH36flU.jpg
+featured_img: 'https://i.imgur.com/zH36flU.jpg'
+thumbnail: 'https://i.imgur.com/zH36flU.jpg'
 ---
 
 # Pizza Dough
