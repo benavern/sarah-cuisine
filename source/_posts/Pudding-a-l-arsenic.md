@@ -8,10 +8,11 @@ tags:
   - poison
   - asterix
 difficulty: 5
-nb_persons: 2
+nb_persons: 3
 ingredients:
-  - 1 vache
-  - 1 patate
+  - chocolat
+  - truc
+  - machin
 featured_img: /images/uploads/pudding_a_l-arsenic.gif
 thumbnail: 'https://i.imgur.com/nINqw1Q.gif'
 ---
