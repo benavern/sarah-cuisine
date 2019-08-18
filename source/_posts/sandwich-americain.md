@@ -1,11 +1,13 @@
 ---
 title: Sandwich américain
-featured_img: https://images.unsplash.com/photo-1550507992-eb63ffee0847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
-categories: plat
+author: Benjamin
+date: 2019-08-16T20:41:00.000Z
+categories: Plat
 tags:
   - sandwitch
   - snack
 difficulty: 1
+nb_persons: 1
 ingredients:
   - 1 baguette de pain
   - 2 pommes de terre nouvelles
@@ -14,6 +16,8 @@ ingredients:
   - quelques cornichons
   - 2 tranches de jambon
   - 2 tranches d'emental
+featured_img: /images/uploads/photo-1550507992-eb63ffee0847.jpeg
+thumbnail: /images/uploads/photo-1550507992-eb63ffee0847.jpeg
 ---
 
 Salut les gens!
