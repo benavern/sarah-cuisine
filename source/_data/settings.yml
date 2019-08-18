@@ -1,0 +1,24 @@
+menu:
+  - name: Accueil
+    path: /
+    active_condition: home
+
+  - name: Mes Recettes
+    path: /recettes
+    active_condition: post
+
+  - name: À Propos
+    path: /a-propos
+
+  - name: Contact
+    path: /contact
+
+description:
+  title: "Bienvenue!"
+  subtitle: "Moi c'est Sarah."
+  avatar: "/images/sarah.jpg"
+  text: "J'aime cuisiner des recettes saines et gourmandes. Je les partage ici pour que vous puissiez vous régaler seul(e) ou en famille!"
+
+footer: "© Sarah Cuisine 2019"
+
+max_items_home: 4
