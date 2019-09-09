@@ -9,6 +9,6 @@ Moi c'est sarah. J'aime cuisiner des petites recettes pour me faire plaisir et f
 
 Tout en mélangeant "healthy" et "gourmand", je fais en sorte que vous trouviez votre bonheur parmis [mes recettes](/recettes).
 
-N'hésitez pas à me contacter si vous avez besoin de plus d'infos sur une recette ou me proposer des recettes à tester et partager pour vous.
+N'hésitez pas à [me contacter](/contact) si vous avez besoin de plus d'infos sur une recette ou me proposer des recettes à tester et partager pour vous.
 
 Bon appétit !
