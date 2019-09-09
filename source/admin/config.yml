@@ -102,6 +102,11 @@ collections:
             name: "thumbnail"
             widget: "image"
 
+          - label: type
+            name: type
+            widget: hidden
+            default: contact
+
           - label: "Contenu"
             name: "body"
             widget: "markdown"
@@ -109,6 +114,26 @@ collections:
       - label: "Contact"
         name: "contact"
         file: "source/contact/index.md"
+        fields:
+          - label: Title
+            name: title
+            widget: string
+
+          - label: "Image principale"
+            name: "featured_img"
+            widget: "image"
+
+          - label: "Image pour les réseaux sociaux"
+            name: "thumbnail"
+            widget: "image"
+
+          - label: "Contenu"
+            name: "body"
+            widget: "markdown"
+
+      - label: "Contact success"
+        name: "contact-success"
+        file: "source/contact/success.md"
         fields:
           - label: Title
             name: title

@@ -9,3 +9,4 @@ CMS.registerPreviewStyle('https://fonts.googleapis.com/css?family=Amatic+SC|Fred
 CMS.registerPreviewTemplate('posts', recettePreviewTemplate)
 CMS.registerPreviewTemplate('about', pagePreviewTemplate)
 CMS.registerPreviewTemplate('contact', pagePreviewTemplate)
+CMS.registerPreviewTemplate('contact-success', pagePreviewTemplate)
