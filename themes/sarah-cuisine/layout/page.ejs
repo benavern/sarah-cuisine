@@ -7,6 +7,12 @@
         <section>
           <%- page.content %>
         </section>
+
+        <% if (page.type === 'contact') { %>
+          <section>
+            <%- partial('_partials/types/contact') %>
+          </section>
+        <% } %>
       </main>
 
       <aside>

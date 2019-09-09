@@ -1,0 +1,38 @@
+form {
+  padding: 1rem 0;
+
+  .input-wrapper {
+    position: relative;
+
+    label {
+      position: absolute;
+      top: .5rem;
+      left: .5rem;
+      transform: translate(0, 0) scale(1);
+      transform-origin: left;
+      transition: transform .3s;
+    }
+
+    .input {
+      display: block;
+      width: 100%;
+      padding: .5rem;
+      border: none;
+      border-bottom: 1px solid $light;
+      font-size: inherit;
+      font-family: inherit;
+      resize: vertical;
+
+      &:focus,
+      &:not(:placeholder-shown) {
+        outline: none;
+        border-color: $primary;
+
+        + label {
+          transform: translate(-.5rem, -1.6rem) scale(0.75);
+          color: $primary;
+        }
+      }
+    }
+  }
+}

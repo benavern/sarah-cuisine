@@ -1,0 +1,23 @@
+a.btn, button.btn {
+  display: inline-block;
+  background: $primary;
+  border: .05em solid $primary;
+  border-radius: .25em;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: $white;
+  padding: .5em 2em;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $black;
+  }
+}

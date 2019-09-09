@@ -1,0 +1,47 @@
+<form
+  action="/contact/success"
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-recaptcha="true">
+  <div class="grid">
+    <div class="grid-item m-2">
+      <div class="box">
+        <div class="input-wrapper">
+          <input type="text" class="input" name="name" placeholder=" " required />
+          <label>Nom *</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item m-2">
+      <div class="box">
+        <div class="input-wrapper">
+          <input type="email" class="input" name="email" placeholder=" " required />
+          <label>Email *</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item m-1">
+      <div class="box">
+        <div class="input-wrapper">
+          <textarea name="message" class="input" placeholder=" " required></textarea>
+          <label>Message *</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item m-2">
+      <div class="box">
+        <div data-netlify-recaptcha="true"></div>
+      </div>
+    </div>
+
+    <div class="grid-item m-2">
+      <div class="box">
+        <button type="submit" class="btn">Envoyer</button>
+      </div>
+    </div>
+  </div>
+</form>
