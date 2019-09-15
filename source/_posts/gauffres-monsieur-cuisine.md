@@ -73,6 +73,4 @@ Moi j'ai choisi de me faire un peu de chocolat fondu pour le verser dessus, et j
 
 ![gaufre chocolat coco](/images/uploads/70781511_461670687752237_701072532542849024_n.jpg "gaufre chocolat coco")
 
-\---
-
-Bon appétit !
+> Bon appétit !
