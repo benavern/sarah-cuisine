@@ -2,7 +2,7 @@
 title: Gaufres - monsieur cuisine
 author: Sarah
 date: 2019-09-15T14:00:00.000Z
-categories: Déssert
+categories: Sucré
 tags:
   - gourmand
   - monsieur cuisine
