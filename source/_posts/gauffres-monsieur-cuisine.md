@@ -20,4 +20,6 @@ ingredients:
 featured_img: /images/uploads/win_20190915_15_38_27_pro.jpg
 thumbnail: /images/uploads/win_20190915_15_38_27_pro.jpg
 ---
-Test
+Coucou tout le monde!
+
+Ce weekend avec mon copain on a acheté une machine à gaufres, voilà donc aujourd'hui ma première recette de gaufres.
