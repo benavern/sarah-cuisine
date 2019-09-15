@@ -70,6 +70,10 @@ collections:
           name: "ingredient"
           widget: "string"
 
+      - label: "Mes commentaires"
+        name: "myComments"
+        widget: "markdown"
+
       - label: "Image principale"
         name: "featured_img"
         widget: "image"

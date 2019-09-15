@@ -38,6 +38,14 @@ function ingredientItem(ingredient, i) {
           <h3>Ingrédients :</h3>
           ${page.ingredients.map(ingredient => partial('../checkbox', { label: ingredient })).join('')}
         `
+      },
+      {
+        type: 'html',
+        html: `
+        <h3>Mes commentaires :</h3>
+        ${page.myComments}
+        `,
+        hide: !page.myComments || page.myComments === ''
       }
     ]
   })

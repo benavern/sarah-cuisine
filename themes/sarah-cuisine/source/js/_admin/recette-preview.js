@@ -1,3 +1,5 @@
+import marked from 'marked'
+
 export default createClass({
   render: function () {
     const entry = this.props.entry
@@ -13,6 +15,7 @@ export default createClass({
     const nb_persons = entry.getIn(['data', 'nb_persons'])
     const difficulty = entry.getIn(['data', 'difficulty'])
     const ingredients = entry.getIn(['data', 'ingredients']) || []
+    const myComments = marked(entry.getIn(['data', 'myComments']) || '')
 
     return h('div', { className: 'page-recette' },
       // enleve le blanc en haut de la preview
@@ -67,6 +70,11 @@ export default createClass({
                     h('input', { type: 'checkbox' }),
                     ' ' + ingredient
                   ))
+                ),
+                // mes commentaires
+                h('div', {className: 'card-item card-html'},
+                  h('h3', {}, 'Mes Commentaires :'),
+                  h('div', { dangerouslySetInnerHTML: { __html: myComments } })
                 )
               )
             )
