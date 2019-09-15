@@ -2,7 +2,7 @@
 title: Sandwich américain
 author: Benjamin
 date: 2019-08-16T20:41:00.000Z
-categories: Plat
+categories: Salé
 tags:
   - sandwitch
   - snack
