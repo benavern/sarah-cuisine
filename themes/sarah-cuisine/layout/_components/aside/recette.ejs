@@ -43,7 +43,7 @@ function ingredientItem(ingredient, i) {
         type: 'html',
         html: `
         <h3>Mes commentaires :</h3>
-        ${page.myComments}
+        ${markdown(page.myComments)}
         `,
         hide: !page.myComments || page.myComments === ''
       }
