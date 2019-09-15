@@ -4,7 +4,7 @@ export default createClass({
 
     // header
     const img = entry.getIn(['data', 'featured_img'])
-    const featured_img = this.props.getAsset(img)
+    const featured_img = this.props.getAsset(img) || ''
     const title = entry.getIn(['data', 'title'])
 
     return h('div', { className: 'page-default' },

@@ -4,15 +4,15 @@ export default createClass({
 
     // header
     const img = entry.getIn(['data', 'featured_img'])
-    const featured_img = this.props.getAsset(img)
+    const featured_img = this.props.getAsset(img) || ''
     const title = entry.getIn(['data', 'title'])
 
     // recette details
     const category = entry.getIn(['data', 'categories'])
-    const tags = entry.getIn(['data', 'tags'])
+    const tags = entry.getIn(['data', 'tags']) || []
     const nb_persons = entry.getIn(['data', 'nb_persons'])
     const difficulty = entry.getIn(['data', 'difficulty'])
-    const ingredients = entry.getIn(['data', 'ingredients'])
+    const ingredients = entry.getIn(['data', 'ingredients']) || []
 
     return h('div', { className: 'page-recette' },
       // enleve le blanc en haut de la preview
