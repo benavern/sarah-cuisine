@@ -36,7 +36,7 @@ function ingredientItem(ingredient, i) {
         type: 'html',
         html: `
           <h3>Ingrédients :</h3>
-          ${page.ingredients.map(ingredientItem).join('')}
+          ${page.ingredients.map(ingredient => partial('../checkbox', { label: ingredient })).join('')}
         `
       }
     ]
