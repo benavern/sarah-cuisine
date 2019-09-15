@@ -1,5 +1,5 @@
 ---
-title: Gauffres - monsieur cuisine
+title: Gaufres - monsieur cuisine
 author: Sarah
 date: 2019-09-15T14:00:00.000Z
 categories: Déssert
@@ -26,7 +26,7 @@ Ce weekend avec [mon copain](https://benjamin.caradeuc.info) on a acheté une ma
 
 # Avant de commencer
 
-## Brancher vos outils
+## Brancher les outils
 
 J'utiliserai : 
 
@@ -75,4 +75,4 @@ Moi j'ai choisi de me faire un peu de chocolat fondu pour le verser dessus, et j
 
 \---
 
-Alors qu'en pensez vous ?
+Bon appétit !
