@@ -6,7 +6,7 @@ categories: Plat
 tags:
   - sandwitch
   - snack
-difficulty: 1
+difficulty: 2
 nb_persons: 1
 ingredients:
   - 1 baguette de pain
