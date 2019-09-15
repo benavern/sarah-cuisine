@@ -17,6 +17,9 @@ ingredients:
   - 2 oeufs
   - 450g de lait d'amande
   - 1 c.c. d’arôme vanille
+myComments: |-
+  * Calories: beaucoup trop
+  * Plaisir: 200%
 featured_img: /images/uploads/win_20190915_15_38_27_pro.jpg
 thumbnail: /images/uploads/win_20190915_15_38_27_pro.jpg
 ---
