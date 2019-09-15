@@ -37,16 +37,15 @@ collections:
         name: "categories"
         widget: "select"
         options:
-          - "Entrée"
-          - "Plat"
-          - "Déssert"
-        default: "Plat"
+          - "Salé"
+          - "Sucré"
+        default: "Sucré"
 
-      - label: "Étiquettes"
+      - label: "Tags"
         name: "tags"
         widget: "list"
         field:
-          label: "Étiquette"
+          label: "Tag"
           name: "tag"
           widget: "string"
 
