@@ -46,6 +46,11 @@ function ingredientItem(ingredient, i) {
         ${markdown(page.myComments)}
         `,
         hide: !page.myComments || page.myComments === ''
+      },
+      {
+        type: 'button',
+        link: 'javascript:window.print()',
+        text: '🖶 Imprimer'
       }
     ]
   })
