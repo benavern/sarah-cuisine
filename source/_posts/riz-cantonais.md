@@ -87,6 +87,8 @@ Réserver.
 
 ## 5. Cuire le tout
 
+Mettre une cuillère à soupe d'huile dans **la même grande poêle** *(allez, c'est la dernière.)*.
+
 Remettre tous les ingrédients dans la grande poêle, assaisonner et faire cuire en mélangeant le tout pendant environ 5 min.
 
 ![Cuire le tout](/images/uploads/img_20200323_135847.jpg "Cuire le tout")
