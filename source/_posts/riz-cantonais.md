@@ -9,7 +9,7 @@ tags:
   - plat
   - accompagnement
 difficulty: 4
-nb_persons: 2
+nb_persons: 4
 ingredients:
   - 200g de riz
   - 2 oeufs
