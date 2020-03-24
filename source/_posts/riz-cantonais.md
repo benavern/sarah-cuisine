@@ -19,7 +19,7 @@ ingredients:
   - 150g jambon (~ 3 tranches)
 myComments: >-
   **Très bon** et **facile à conserver** au frigo, il suffira de **2 min au four
-  micro-ondes** pour servir ce plat chaud 1 ou 2 jours après la préparation.
+  micro-ondes** pour servir ce plat chaud.
 
 
   Il est possible de **remplacer le jambon** par des *crevettes*, du *poulet* ou
