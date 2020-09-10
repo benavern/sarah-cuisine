@@ -18,7 +18,7 @@ function ingredientItem(ingredient, i) {
         type: 'html',
         html: `
           <h4>${list_categories(page.categories, { show_count: false, style: 'category', separator: ', ', transform: titlecase })}</h4>
-          <p>${list_tags(page.tags, { show_count: false, style: 'tag', separator: '', class: 'badge' })}</p>
+          <p>${list_tags(page.tags, { show_count: false, style: 'tag', separator: '', class: {a: 'badge-link'} })}</p>
         `
       },
       {

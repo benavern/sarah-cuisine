@@ -22,7 +22,7 @@
               type: 'html',
               html: `
                 <h4>${list_categories(recette.categories, { show_count: false, style: 'category', separator: ', ', transform: titlecase })}</h4>
-                <p>${list_tags(recette.tags, { show_count: false, style: 'tag', separator: '', class: 'badge' })}</p>
+                <p>${list_tags(recette.tags, { show_count: false, style: 'tag', separator: '', class: {a: 'badge-link'} })}</p>
                 <div class="right">
                   <small class="disqus-comment-count" data-disqus-identifier="${recette.path}">
                     ? Commentaires
