@@ -181,10 +181,10 @@ collections:
                 widget: 'select'
                 required: false
                 options:
-                  - name: home
-                    label: Accueil
-                  - name: post
-                    label: recette
+                  - value: "home"
+                    label: "Accueil"
+                  - value: "post"
+                    label: "Recette"
 
           - name: description
             label: Description
